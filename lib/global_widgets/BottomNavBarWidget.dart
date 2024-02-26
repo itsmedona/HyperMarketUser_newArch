@@ -13,7 +13,6 @@ class _NavScreenState extends State<BottomNavBarWidget> {
   int selectedIndex = 0;
   List<Widget> MyWidgetList = [
     HomeScreen(),
-    //SearchScreen(),
     CartScreen(),
     //FavoritesScreen(),
     //ProfileScreen()

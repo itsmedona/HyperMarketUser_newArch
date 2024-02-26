@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import '../core/LogIn.dart';
+import 'package:new_architect/presentation/HomeScreen/view/HomeScreen.dart';
 
 // ignore: non_constant_identifier_names
 Widget AppBarWidget(context) {
@@ -11,7 +10,9 @@ Widget AppBarWidget(context) {
     actions: [
       IconButton(
         onPressed: () {
-          Navigator.push(context,MaterialPageRoute(builder: (context) =>LogIn()),
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => HomeScreen()),
           );
         },
         icon: const Icon(Icons.person),

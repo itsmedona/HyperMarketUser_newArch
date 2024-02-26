@@ -1,6 +1,8 @@
-import 'package:flutter/material.dart';
 
-import 'SignUp.dart';
+import 'package:flutter/material.dart';
+import 'package:new_architect/core/Registration.dart';
+
+
 class LogIn extends StatefulWidget {
   const LogIn({super.key});
 
@@ -163,7 +165,7 @@ class _LogInState extends State<LogIn> {
                       onTap: () => {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => SignUp()),
+                          MaterialPageRoute(builder: (context) =>RegistrationScreen()),
                         )
                       },
                       child: Container(
