@@ -34,11 +34,11 @@ class _BottomNavBarState extends State<BottomNavBar> {
           Icons.home,
           Icons.shopping_cart,
           Icons.favorite_border,
-          Icons.person
+          Icons.person_outline
         ],
         inactiveColor: Colors.black.withOpacity(0.6),
         activeColor: Colors.deepOrangeAccent,
-        gapLocation: GapLocation.none,
+        gapLocation: GapLocation.center,
         activeIndex: pageIndex,
         notchSmoothness: NotchSmoothness.softEdge,
         leftCornerRadius: 10,

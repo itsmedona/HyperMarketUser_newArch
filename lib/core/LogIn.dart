@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:new_architect/core/ForgotScreen.dart';
 import 'package:new_architect/global_widgets/BottomNavBar.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -105,7 +106,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       Align(
                         alignment: Alignment.centerRight,
                         child: TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ForgotScreen(),
+                                ));
+                          },
                           child: Text(
                             "Forgot Password?",
                             style: TextStyle(
