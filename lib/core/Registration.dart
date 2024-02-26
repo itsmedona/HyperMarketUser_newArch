@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'LogIn.dart';
-
+import 'package:new_architect/core/LogIn.dart';
 class RegistrationScreen extends StatefulWidget {
   const RegistrationScreen({super.key});
 
@@ -58,7 +56,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                 children: [
                   SizedBox(height: 20),
                   Text(
-                    "First Name*",
+                    "First Name *",
                     style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
@@ -76,7 +74,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "Last Name*",
+                    "Last Name *",
                     style: TextStyle(
                       fontSize: 15,
                       color: Colors.black,
@@ -94,7 +92,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "User Name*",
+                    "User Name *",
                     style: TextStyle(
                         fontSize: 15,
                         color: Colors.black,
@@ -110,7 +108,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "Email Id*",
+                    "Email Id *",
                     style: TextStyle(
                         fontSize: 15,
                         color: Colors.black,
@@ -126,7 +124,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                   ),
                   SizedBox(height: 15),
                   Text(
-                    "Password",
+                    "Password ",
                     style: TextStyle(
                         fontSize: 15,
                         color: Colors.black,
@@ -147,16 +145,14 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     width: double.infinity,
                     child: ElevatedButton(
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => LogIn()));
+                          Navigator.push(context,
+                              MaterialPageRoute(builder: (context) => LoginScreen()));
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.orange,
                         ),
                         child: Text(
-                          "Register",
+                          "Register ",
                           style: TextStyle(
                               color: Colors.white,
                               fontSize: 25,
