@@ -29,12 +29,23 @@ class _BottomNavBarState extends State<BottomNavBar> {
         index: pageIndex,
         children: pages,
       ),
+      floatingActionButton: SafeArea(
+        child: FloatingActionButton(
+          onPressed: () {},
+          child: Icon(
+            Icons.qr_code,
+            size: 20,
+          ),
+          backgroundColor: Colors.deepOrangeAccent,
+        ),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: AnimatedBottomNavigationBar(
         icons: [
           Icons.home,
           Icons.shopping_cart,
           Icons.favorite_border,
-          Icons.person_outline
+          Icons.person_outlined
         ],
         inactiveColor: Colors.black.withOpacity(0.6),
         activeColor: Colors.deepOrangeAccent,
@@ -54,65 +65,6 @@ class _BottomNavBarState extends State<BottomNavBar> {
     );
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*
 import 'package:flutter/material.dart';

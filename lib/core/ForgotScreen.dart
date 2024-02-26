@@ -41,15 +41,13 @@ class _ForgotScreenState extends State<ForgotScreen> {
               ),
               SizedBox(height: 20),
               TextFormField(
-                onChanged: (val) {}
-                ,
+                onChanged: (val) {},
                 decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: "Email",
-                    
-                     )),
+                    labelText: "Email", 
+                     ),
+                     ),
              ], ),
-            
           ),
         ),
       );
