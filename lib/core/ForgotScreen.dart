@@ -8,8 +8,6 @@ class ForgotScreen extends StatefulWidget {
 }
 
 class _ForgotScreenState extends State<ForgotScreen> {
-  
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -43,14 +41,14 @@ class _ForgotScreenState extends State<ForgotScreen> {
               TextFormField(
                 onChanged: (val) {},
                 decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: "Email", 
-                     ),
-                     ),
-             ], ),
+                  border: OutlineInputBorder(),
+                  labelText: "Email",
+                ),
+              ),
+            ],
           ),
         ),
-      );
-    
+      ),
+    );
   }
 }
